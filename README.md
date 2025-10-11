@@ -65,76 +65,19 @@ unit-testing-demo/
 
 ## 🎯 Functions to Test
 
-The `dataProcessor.js` file contains six functions with varying complexity levels:
+The `dataProcessor.js` file contains two functions to test:
 
-### 1. `add(a, b)`
-- **Purpose**: Adds two numbers together
-- **Test scenarios**: Valid numbers, invalid inputs, edge cases
-- **Example**: `add(2, 3)` returns `5`
+### 1. `countWords(text)`
+- **Purpose**: Counts the number of words in a given text string
+- **Test scenarios**: Normal text, empty strings, strings with extra spaces, null/undefined inputs
+- **Example**: `countWords("hello world")` returns `2`
 
-### 2. `filterEvenNumbers(numbers)`
-- **Purpose**: Filters an array to return only even numbers
-- **Test scenarios**: Valid arrays, empty arrays, non-numeric elements
-- **Example**: `filterEvenNumbers([1, 2, 3, 4])` returns `[2, 4]`
-
-### 3. `capitalizeWords(str)`
-- **Purpose**: Capitalizes the first letter of each word
-- **Test scenarios**: Normal strings, empty strings, special characters
-- **Example**: `capitalizeWords("hello world")` returns `"Hello World"`
-
-### 4. `calculateAverage(numbers)`
-- **Purpose**: Calculates the average of an array of numbers
-- **Test scenarios**: Valid arrays, empty arrays, mixed data types
-- **Example**: `calculateAverage([1, 2, 3, 4, 5])` returns `3`
-
-### 5. `isValidEmail(email)`
-- **Purpose**: Validates email address format
-- **Test scenarios**: Valid emails, invalid formats, edge cases
-- **Example**: `isValidEmail("user@example.com")` returns `true`
-
-### 6. `findMax(numbers)`
-- **Purpose**: Finds the maximum number in an array
-- **Test scenarios**: Positive numbers, negative numbers, mixed arrays
+### 2. `findMax(numbers)`
+- **Purpose**: Finds the maximum number in an array of numbers
+- **Test scenarios**: Arrays with positive numbers, negative numbers, mixed arrays, single element arrays
 - **Example**: `findMax([1, 5, 3, 9, 2])` returns `9`
 
-## 📝 Sample Test Structure
 
-Here's an example of how your test file might look:
-
-```javascript
-const {
-    add,
-    filterEvenNumbers,
-    capitalizeWords,
-    calculateAverage,
-    isValidEmail,
-    findMax
-} = require('../dataProcessor');
-
-describe('Data Processing Functions', () => {
-    describe('add function', () => {
-        test('should add two positive numbers correctly', () => {
-            expect(add(2, 3)).toBe(5);
-        });
-
-        test('should throw error for non-numeric inputs', () => {
-            expect(() => add('2', 3)).toThrow('Both arguments must be numbers');
-        });
-    });
-
-    describe('filterEvenNumbers function', () => {
-        test('should return only even numbers', () => {
-            expect(filterEvenNumbers([1, 2, 3, 4, 5, 6])).toEqual([2, 4, 6]);
-        });
-
-        test('should return empty array when no even numbers', () => {
-            expect(filterEvenNumbers([1, 3, 5])).toEqual([]);
-        });
-    });
-
-    // Add more test suites for other functions...
-});
-```
 
 ## 💡 Testing Best Practices
 
@@ -173,47 +116,6 @@ describe('FunctionName', () => {
     });
 });
 ```
-
-## 🎨 Visual Instructions
-
-Open `index.html` in your browser to see a beautifully styled instruction guide with:
-- Step-by-step setup process
-- Visual project structure
-- Testing tips and best practices
-- Color-coded sections for easy navigation
-
-## 🛠️ Development Workflow
-
-1. **Red**: Write a failing test first
-2. **Green**: Write minimal code to make the test pass
-3. **Refactor**: Improve the code while keeping tests green
-4. **Repeat**: Continue the cycle for each function
-
-## 📚 Learning Objectives
-
-By completing this project, you will:
-- ✅ Understand Jest testing framework basics
-- ✅ Learn to write comprehensive unit tests
-- ✅ Practice Test-Driven Development (TDD)
-- ✅ Handle edge cases and error scenarios
-- ✅ Organize tests with describe blocks
-- ✅ Use various Jest matchers effectively
-
-## 🤝 Contributing
-
-This is a learning project! Feel free to:
-- Add more complex functions to test
-- Improve the existing functions
-- Enhance the visual instruction guide
-- Share your testing strategies
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🎉 Happy Testing!
-
-Remember: Good tests make for confident code. Start testing today and build better, more reliable applications!
 
 ---
 
