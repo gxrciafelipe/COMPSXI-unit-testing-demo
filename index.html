@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Testing Demo with Jest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧪 Unit Testing Practice Application</h1>
+            <p class="subtitle">Learn to write unit tests with Jest</p>
+        </header>
+
+        <main>
+            <section class="intro">
+                <h2>Welcome to the Unit Testing Demo!</h2>
+                <p>This application is designed to help you practice writing unit tests using Jest. You'll be testing the functions in <code>dataProcessor.js</code>.</p>
+            </section>
+
+            <section class="instructions">
+                <h2>📋 Setup Instructions</h2>
+                <p>Follow these steps to get started with Jest unit testing:</p>
+                
+                <ol class="steps">
+                    <li>
+                        <div class="step">
+                            <h3>1. Initialize Node Environment</h3>
+                            <p>Create a new Node.js project with default settings:</p>
+                            <code class="command">npm init -y</code>
+                            <p class="note">This creates a <code>package.json</code> file with default configuration.</p>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="step">
+                            <h3>2. Create Tests Directory</h3>
+                            <p>Create a <code>__tests__</code> folder for your test files:</p>
+                            <code class="command">mkdir __tests__</code>
+                            <p class="note">Jest automatically looks for test files in the <code>__tests__</code> directory.</p>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="step">
+                            <h3>3. Write Unit Tests</h3>
+                            <p>Create unit tests for the functions in <code>dataProcessor.js</code>:</p>
+                            <p>Create test files like <code>__tests__/dataProcessor.test.js</code></p>
+                            <p class="note">Test various scenarios including edge cases, valid inputs, and error conditions.</p>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="step">
+                            <h3>4. Run Your Tests</h3>
+                            <p>Execute your tests using npm:</p>
+                            <code class="command">npm test</code>
+                            <p class="note">Make sure to install Jest first: <code>npm install --save-dev jest</code></p>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="tips">
+                <h2>💡 Testing Tips</h2>
+                <ul>
+                    <li>Write tests before implementing functions (Test-Driven Development)</li>
+                    <li>Test both happy path and error scenarios</li>
+                    <li>Use descriptive test names that explain what is being tested</li>
+                    <li>Keep tests simple and focused on one thing at a time</li>
+                    <li>Use <code>describe()</code> blocks to group related tests</li>
+                </ul>
+            </section>
+
+            <section class="file-info">
+                <h2>📁 Project Structure</h2>
+                <div class="file-tree">
+                    <pre>
+unit-testing-demo/
+├── index.html          (this instruction page)
+├── style.css           (styling for this page)
+├── dataProcessor.js    (functions to test)
+├── package.json        (created after npm init)
+└── __tests__/          (your test files go here)
+    └── dataProcessor.test.js
+                    </pre>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Happy testing! 🚀</p>
+        </footer>
+    </div>
+</body>
+</html>
