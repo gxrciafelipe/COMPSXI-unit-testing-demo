@@ -1,0 +1,24 @@
+{
+  "name": "compsxi-unit-testing-demo",
+  "version": "1.0.0",
+  "description": "A practice application designed to help you learn and master unit testing using Jest. This project provides sample functions and clear instructions to get you started with Test-Driven Development (TDD).",
+  "main": "dataProcessor.js",
+  "scripts": {
+     "test": "jest"
+   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gxrciafelipe/COMPSXI-unit-testing-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gxrciafelipe/COMPSXI-unit-testing-demo/issues"
+  },
+  "homepage": "https://github.com/gxrciafelipe/COMPSXI-unit-testing-demo#readme",
+  "devDependencies": {
+    "jest": "^30.5.2"
+  }
+}
