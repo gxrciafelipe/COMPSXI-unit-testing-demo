@@ -15,7 +15,17 @@ function findMax(numbers) {
     return max;
 }
 
+function isEven(number) {
+    return number % 2 === 0;
+}
+
+function calculateDiscount(price, discountPercent) {
+    return price * (1 - discountPercent / 100);
+}
+
 module.exports = { 
     countWords, 
-    findMax 
+    findMax,
+    isEven,
+    calculateDiscount
 };
